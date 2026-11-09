@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos — ONYX CODE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header id="navbar" class="navbar scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-circle">O</div>
+        <div class="logo-text">
+          <span class="logo-name">ONYX</span>
+          <span class="logo-sub">CODE</span>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#home">Inicio</a>
+        <a href="skills.html">Habilidades</a>
+        <a href="team.html">Equipo</a>
+        <a href="index.html#process">Proceso</a>
+        <a href="projects.html">Proyectos</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+      <a href="index.html#contact" class="nav-cta">Empezar proyecto</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#home">Inicio</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="team.html">Equipo</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="index.html#contact">Contacto</a>
+      <a href="index.html#contact" class="mobile-cta">Empezar proyecto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Portfolio</span>
+        <h1 class="section-title">Proyectos que hemos construido</h1>
+        <p class="contact-text" style="max-width:560px;margin-top:16px;">
+          Dos productos reales: una plataforma web de citas para estudios de tatuaje y una app móvil de servicios médicos a distancia.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+
+        <!-- APPOINTGO -->
+        <article class="detail-project" id="appointgo">
+          <div class="project-showcase detail-carousel">
+            <div class="screenshot-track">
+              <div class="shot web-shot"><img src="assets/projects/screen_7.png" alt="Booking" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_3.png" alt="Cliente" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_5.png" alt="Negocio" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_6.png" alt="Staff" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_8.png" alt="Panel" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_9.png" alt="Admin" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_10.png" alt="Flujo" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_7.png" alt="" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_3.png" alt="" /></div>
+              <div class="shot web-shot"><img src="assets/projects/screen_5.png" alt="" /></div>
+            </div>
+          </div>
+          <div class="detail-text-block">
+            <span class="project-tag">Web · API REST · Live demo</span>
+            <h2 class="project-name" style="margin-top:12px;">AppointGo / Ink API</h2>
+            <p class="project-desc">
+              Sistema de gestión de citas para estudios de tatuaje. API REST con <strong style="color:var(--gray-200)">.NET 9</strong>
+              y Clean Architecture (estilo Milan Jovanović), frontend desplegado y listo para usar.
+            </p>
+            <div class="detail-meta">
+              <span>.NET 9</span><span>EF Core</span><span>MediatR</span><span>FluentValidation</span>
+              <span>JWT</span><span>Google OAuth</span><span>Google Calendar</span><span>SQL Server / Postgres</span>
+            </div>
+            <p style="margin-bottom:16px;">
+              <a href="https://ink-frontend.onrender.com/" target="_blank" rel="noopener" class="btn btn-primary">Abrir demo en vivo →</a>
+            </p>
+            <div class="detail-columns">
+              <div>
+                <h4 style="margin:12px 0 10px;font-size:0.95rem;color:var(--gray-300);">Flujo del cliente</h4>
+                <ul class="detail-list">
+                  <li>Ve página pública (ubicación, galería)</li>
+                  <li>Inicia sesión con Google OAuth → se registra como CLIENT</li>
+                  <li>Selecciona staff + tamaño del tatuaje (SMALL / MEDIUM / LARGE)</li>
+                  <li>Consulta disponibilidad en calendario y reserva horario</li>
+                  <li>Se crea evento en Google Calendar (cliente + staff)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="margin:12px 0 10px;font-size:0.95rem;color:var(--gray-300);">Flujo del staff</h4>
+                <ul class="detail-list">
+                  <li>Listado de citas (nombre, hora, sucursal, tamaño, estado)</li>
+                  <li>Configura tiempos por tamaño y bloquea horarios</li>
+                  <li>Citas sincronizadas a su Google Calendar</li>
+                </ul>
+                <h4 style="margin:20px 0 10px;font-size:0.95rem;color:var(--gray-300);">Flujo del admin</h4>
+                <ul class="detail-list">
+                  <li>Panel global de citas, reprogramar y reasignar staff</li>
+                  <li>Vista de staff libres / sin citas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- MED APP -->
+        <article class="detail-project" id="medapp">
+          <div class="project-showcase detail-carousel mobile-carousel">
+            <div class="screenshot-track track-mobile">
+              <div class="shot phone-shot"><img src="assets/projects/med/med_1.jpg" alt="App 1" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_2.jpg" alt="App 2" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_3.jpg" alt="App 3" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_4.jpg" alt="App 4" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_5.jpg" alt="App 5" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_6.jpg" alt="App 6" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_7.jpg" alt="App 7" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_8.jpg" alt="App 8" /></div>
+              <!-- exact duplicate -->
+              <div class="shot phone-shot"><img src="assets/projects/med/med_1.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_2.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_3.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_4.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_5.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_6.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_7.jpg" alt="" /></div>
+              <div class="shot phone-shot"><img src="assets/projects/med/med_8.jpg" alt="" /></div>
+            </div>
+          </div>
+          <div class="detail-text-block">
+            <span class="project-tag">Android · React Native · Expo</span>
+            <h2 class="project-name" style="margin-top:12px;">App de Servicios Médicos a Distancia</h2>
+            <p class="project-desc">
+              Aplicación móvil completa para consultas virtuales, recetas electrónicas, historial médico digital
+              y comunicación en tiempo real con médicos y especialistas.
+            </p>
+            <div class="detail-meta">
+              <span>React Native</span><span>Expo</span><span>Firebase Auth</span><span>Firestore</span>
+              <span>Realtime DB</span><span>SQLite</span><span>Google Maps</span><span>Push Notifications</span>
+            </div>
+            <div class="detail-columns">
+              <div>
+                <h4 style="margin:12px 0 10px;font-size:0.95rem;color:var(--gray-300);">Funcionalidades de usuario</h4>
+                <ul class="detail-list">
+                  <li>Autenticación segura con Firebase y encriptación de datos sensibles</li>
+                  <li>Perfil completo y dashboard de consultas, recetas y mensajes</li>
+                  <li>Búsqueda de médicos por especialidad, ubicación, disponibilidad e idioma</li>
+                  <li>Programación y gestión de citas virtuales</li>
+                  <li>Recetas electrónicas: ver, descargar y compartir con farmacias</li>
+                  <li>Historial médico digital (consultas, recetas, resultados)</li>
+                </ul>
+              </div>
+              <div>
+                <h4 style="margin:12px 0 10px;font-size:0.95rem;color:var(--gray-300);">Comunicación y mapas</h4>
+                <ul class="detail-list">
+                  <li>Chat en tiempo real con Firebase Realtime Database</li>
+                  <li>Notificaciones push para mensajes y recordatorios</li>
+                  <li>Google Maps, geolocalización y navegación a centros médicos</li>
+                  <li>Foro de salud y sistema de calificaciones</li>
+                </ul>
+                <h4 style="margin:20px 0 10px;font-size:0.95rem;color:var(--gray-300);">Seguridad</h4>
+                <ul class="detail-list">
+                  <li>Expo Secure Store y Crypto para datos sensibles</li>
+                  <li>Validación de entrada y autenticación Firebase</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <div class="logo-circle small">O</div>
+        <div><span class="logo-name">ONYX</span> <span class="logo-sub">CODE</span></div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Onyx Code. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="projects.html">Proyectos</a>
+        <a href="index.html#contact">Contacto</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuToggle.addEventListener("click", () => mobileMenu.classList.toggle("open"));
+    mobileMenu.querySelectorAll("a").forEach((l) => l.addEventListener("click", () => mobileMenu.classList.remove("open")));
+  </script>
+</body>
+</html>

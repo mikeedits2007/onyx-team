@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ONYX CODE — Hacemos realidad tus ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- INTRO SEQUENCE -->
+  <div id="intro" class="intro">
+    <div class="intro-inner">
+      <!-- Eyes / face icon -->
+      <div class="intro-face" aria-hidden="true">
+        <div class="intro-eye left">
+          <div class="intro-pupil"></div>
+        </div>
+        <div class="intro-eye right">
+          <div class="intro-pupil"></div>
+        </div>
+        <div class="intro-mouth"></div>
+      </div>
+
+      <div class="intro-text-block">
+        <p class="intro-hi">Hi</p>
+        <h1 class="intro-welcome">Welcome to our portfolio</h1>
+        <p class="intro-desc">
+          We are <strong>Onyx Code</strong> — a multidisciplinary team of designers and engineers
+          who turn ideas into polished digital products. Precision, craft, and clear communication.
+        </p>
+      </div>
+
+      <div class="intro-progress">
+        <div class="intro-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <div class="logo-circle">O</div>
+        <div class="logo-text">
+          <span class="logo-name">ONYX</span>
+          <span class="logo-sub">CODE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html#home">Inicio</a>
+        <a href="skills.html">Habilidades</a>
+        <a href="team.html">Equipo</a>
+        <a href="index.html#process">Proceso</a>
+        <a href="projects.html">Proyectos</a>
+        <a href="index.html#contact">Contacto</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">Empezar proyecto</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#home">Inicio</a>
+      <a href="skills.html">Habilidades</a>
+      <a href="team.html">Equipo</a>
+      <a href="index.html#process">Proceso</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="index.html#contact">Contacto</a>
+      <a href="index.html#contact" class="mobile-cta">Empezar proyecto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-grid-bg"></div>
+      <!-- Floating cubes animation -->
+      <div class="cubes-scene" id="cubesScene" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Equipo de Desarrollo</span>
+          </div>
+
+          <!-- Frase animada dentro de marco cuadrado -->
+          <div class="hero-phrase-wrap">
+            <div class="phrase-frame">
+              <span class="corner corner-tl"></span>
+              <span class="corner corner-tr"></span>
+              <span class="corner corner-bl"></span>
+              <span class="corner corner-br"></span>
+            </div>
+            <h1 id="heroPhrase" class="hero-phrase"></h1>
+          </div>
+
+          <p class="hero-subtitle">
+            Soluciones de software de alto nivel construidas sobre una base de
+            excelencia técnica, diseño preciso y entrega confiable.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Solicitar servicio</a>
+            <a href="#skills" class="btn btn-outline">Ver habilidades</a>
+          </div>
+        </div>
+
+        <!-- Carrusel de habilidades -->
+        <div class="hero-right">
+          <div class="skill-showcase" id="skillShowcase">
+            <!-- Slides se generan con JS -->
+          </div>
+          <div class="showcase-accent showcase-accent-1"></div>
+          <div class="showcase-accent showcase-accent-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Lo que dominamos</span>
+          <h2 class="section-title">Habilidades que transforman ideas en productos reales</h2>
+        </div>
+
+        <!-- Infinite symbol animation -->
+        <div class="infinity-wrap" aria-hidden="true">
+          <svg class="infinity-svg" viewBox="0 0 200 100" fill="none">
+            <path class="infinity-path"
+              d="M30,50 C30,20 70,20 100,50 C130,80 170,80 170,50 C170,20 130,20 100,50 C70,80 30,80 30,50" />
+            <circle class="infinity-dot" r="3.5" />
+          </svg>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>Frontend Avanzado</h3>
+            <p>Interfaces reactivas, performantes y accesibles con React, Next.js, TypeScript y animaciones de nivel producción.</p>
+            <div class="tags">
+              <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Backend Expertise</h3>
+            <p>Arquitecturas escalables, microservicios, GraphQL y REST. Bases de datos SQL y NoSQL optimizadas.</p>
+            <div class="tags">
+              <span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Redis</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+            </div>
+            <h3>Desarrollo Móvil</h3>
+            <p>Apps nativas y multiplataforma de alta calidad con experiencia de usuario impecable.</p>
+            <div class="tags">
+              <span>React Native</span><span>Flutter</span><span>iOS</span><span>Android</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Cloud & DevOps</h3>
+            <p>Infraestructura como código, CI/CD, contenedores y monitoreo para sistemas resilientes.</p>
+            <div class="tags">
+              <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Sistemas de diseño, prototipos de alta fidelidad y motion design que elevan la experiencia.</p>
+            <div class="tags">
+              <span>Figma</span><span>Design Systems</span><span>Motion</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Seguridad & Calidad</h3>
+            <p>Código limpio, testing automatizado, auditorías de seguridad y mejores prácticas OWASP.</p>
+            <div class="tags">
+              <span>Testing</span><span>Security</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM / CREATORS -->
+    <section id="team" class="section team">
+      <div class="blackhole" aria-hidden="true">
+        <div class="bh-disk"></div>
+        <div class="bh-disk bh-disk-2"></div>
+        <div class="bh-horizon"></div>
+        <div class="bh-glow"></div>
+      </div>
+
+      <div class="container team-content">
+        <div class="team-header">
+          <div>
+            <span class="section-label">El equipo</span>
+            <h2 class="section-title">Mentes detrás del código</h2>
+          </div>
+          <p class="team-intro">Un equipo multidisciplinario enfocado en calidad, comunicación clara y resultados medibles. <a href="team.html" style="color:var(--gray-300);text-decoration:underline;">Conócenos</a></p>
+        </div>
+
+        <div class="team-grid team-grid-two">
+          <div class="team-card team-card-featured">
+            <div class="avatar avatar-photo"><img src="assets/team/miguel.png" alt="Miguel Granados" /></div>
+            <h3>Miguel Granados</h3>
+            <p class="role">UX Designer / Frontend Developer</p>
+            <p class="focus">Interfaces · Motion · Product</p>
+            <div class="team-skills">
+              <span>UI/UX</span>
+              <span>Motion</span>
+              <span>React</span>
+              <span>Product Design</span>
+            </div>
+            <p class="team-bio">
+              Diseño y desarrollo de experiencias digitales con foco en claridad, ritmo visual y productos listos para producción.
+            </p>
+          </div>
+          <div class="team-card team-card-featured">
+            <div class="avatar avatar-photo"><img src="assets/team/saul.png" alt="Saul Batres" /></div>
+            <h3>Saul Batres</h3>
+            <p class="role">Backend Developer</p>
+            <p class="focus">APIs · .NET · Arquitectura</p>
+            <div class="team-skills">
+              <span>.NET</span>
+              <span>Clean Architecture</span>
+              <span>SQL</span>
+              <span>APIs</span>
+            </div>
+            <p class="team-bio">
+              Técnico en Ing. de Sistemas Informáticos. Desarrollo y mantenimiento de software; cursando Ingeniería en Desarrollo de Software.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <!-- Wireframe Rubik-style 3D cube (only here) -->
+      <div class="bg-cube-wrap" aria-hidden="true">
+        <div class="bg-cube rubik-cube" id="processCube">
+          <div class="bg-face front"></div>
+          <div class="bg-face back"></div>
+          <div class="bg-face right"></div>
+          <div class="bg-face left"></div>
+          <div class="bg-face top"></div>
+          <div class="bg-face bottom"></div>
+          <!-- Nested inner cubes for Rubik / wireframe depth -->
+          <div class="inner-cube ic1">
+            <div class="bg-face front"></div><div class="bg-face back"></div>
+            <div class="bg-face right"></div><div class="bg-face left"></div>
+            <div class="bg-face top"></div><div class="bg-face bottom"></div>
+          </div>
+          <div class="inner-cube ic2">
+            <div class="bg-face front"></div><div class="bg-face back"></div>
+            <div class="bg-face right"></div><div class="bg-face left"></div>
+            <div class="bg-face top"></div><div class="bg-face bottom"></div>
+          </div>
+          <div class="inner-cube ic3">
+            <div class="bg-face front"></div><div class="bg-face back"></div>
+            <div class="bg-face right"></div><div class="bg-face left"></div>
+            <div class="bg-face top"></div><div class="bg-face bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container process-content">
+        <div class="section-header">
+          <span class="section-label">Cómo trabajamos</span>
+          <h2 class="section-title">Un proceso claro de principio a fin</h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-number">01</div>
+            <h3>Descubrimiento</h3>
+            <p>Entendemos tu visión, objetivos de negocio y restricciones técnicas para definir el alcance correcto.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">02</div>
+            <h3>Diseño & Arquitectura</h3>
+            <p>Creamos prototipos, sistemas de diseño y la arquitectura técnica que sostendrá el producto a largo plazo.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">03</div>
+            <h3>Desarrollo Ágil</h3>
+            <p>Sprints cortos, demos frecuentes y feedback constante. Código limpio, testeado y documentado.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-number">04</div>
+            <h3>Lanzamiento & Soporte</h3>
+            <p>Deploy controlado, monitoreo, optimización continua y soporte técnico cuando lo necesites.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Proyectos</span>
+          <h2 class="section-title">Producto real que hemos construido</h2>
+        </div>
+
+        <div class="home-projects-stack">
+          <!-- AppointGo -->
+          <article class="home-project-block">
+            <div class="project-showcase home-carousel">
+              <div class="screenshot-track track-web">
+                <div class="shot web-shot"><img src="assets/projects/screen_7.png" alt="AppointGo booking" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_3.png" alt="Cliente" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_5.png" alt="Negocio" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_6.png" alt="Staff" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_8.png" alt="Panel" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_9.png" alt="Admin" /></div>
+                <!-- exact duplicate for seamless loop -->
+                <div class="shot web-shot"><img src="assets/projects/screen_7.png" alt="" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_3.png" alt="" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_5.png" alt="" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_6.png" alt="" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_8.png" alt="" /></div>
+                <div class="shot web-shot"><img src="assets/projects/screen_9.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="home-project-body">
+              <span class="project-tag">Web · .NET 9</span>
+              <h3>AppointGo / Ink API</h3>
+              <p>Sistema de citas para estudios de tatuaje con Google OAuth, Calendar y paneles cliente / staff / admin.</p>
+              <div class="home-project-actions">
+                <a href="projects.html#appointgo" class="btn btn-primary">Ver detalle</a>
+                <a href="https://ink-frontend.onrender.com/" target="_blank" rel="noopener" class="btn btn-outline">Abrir demo</a>
+              </div>
+            </div>
+            <div class="static-shots web-static">
+              <img src="assets/projects/screen_7.png" alt="Booking" />
+              <img src="assets/projects/screen_3.png" alt="Cliente" />
+              <img src="assets/projects/screen_5.png" alt="Negocio" />
+              <img src="assets/projects/screen_6.png" alt="Staff" />
+            </div>
+          </article>
+
+          <!-- Medical app -->
+          <article class="home-project-block">
+            <div class="project-showcase home-carousel mobile-carousel">
+              <div class="screenshot-track track-mobile">
+                <div class="shot phone-shot"><img src="assets/projects/med/med_1.jpg" alt="App médica 1" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_2.jpg" alt="App médica 2" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_3.jpg" alt="App médica 3" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_4.jpg" alt="App médica 4" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_5.jpg" alt="App médica 5" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_6.jpg" alt="App médica 6" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_7.jpg" alt="App médica 7" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_8.jpg" alt="App médica 8" /></div>
+                <!-- exact duplicate set for seamless infinite loop -->
+                <div class="shot phone-shot"><img src="assets/projects/med/med_1.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_2.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_3.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_4.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_5.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_6.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_7.jpg" alt="" /></div>
+                <div class="shot phone-shot"><img src="assets/projects/med/med_8.jpg" alt="" /></div>
+              </div>
+            </div>
+            <div class="home-project-body">
+              <span class="project-tag">Mobile · React Native</span>
+              <h3>App de Servicios Médicos</h3>
+              <p>Aplicación Android para consultas virtuales, recetas electrónicas, chat en tiempo real e historial médico.</p>
+              <div class="home-project-actions">
+                <a href="projects.html#medapp" class="btn btn-primary">Ver detalle</a>
+              </div>
+            </div>
+            <div class="static-shots mobile-static">
+              <img src="assets/projects/med/med_1.jpg" alt="App 1" />
+              <img src="assets/projects/med/med_2.jpg" alt="App 2" />
+              <img src="assets/projects/med/med_3.jpg" alt="App 3" />
+              <img src="assets/projects/med/med_4.jpg" alt="App 4" />
+              <img src="assets/projects/med/med_5.jpg" alt="App 5" />
+              <img src="assets/projects/med/med_6.jpg" alt="App 6" />
+            </div>
+          </article>
+        </div>
+
+        <p style="margin-top:28px;text-align:center;">
+          <a href="projects.html" class="btn btn-outline">Ver todos los proyectos →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-container contact-content">
+        <div class="contact-left">
+          <span class="section-label">Hablemos</span>
+          <h2 class="section-title">¿Listo para hacer realidad tu próxima idea?</h2>
+          <p class="contact-text">
+            Cuéntanos sobre tu proyecto. Te respondemos en menos de 24 horas con una propuesta clara y sin compromiso.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:miguelgranadoswork@gmail.com" class="contact-link">
+              <div class="contact-icon">✉</div>
+              <span>miguelgranadoswork@gmail.com</span>
+            </a>
+            <a href="tel:+50373452474" class="contact-link">
+              <div class="contact-icon">📞</div>
+              <span>+503 7345 2474</span>
+            </a>
+            <a href="#contact" class="contact-link">
+              <div class="contact-icon">💬</div>
+              <span>Agenda una llamada</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="contactForm">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label>Proyecto</label>
+              <textarea rows="4" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Enviar mensaje →
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <div class="logo-circle small">O</div>
+        <div>
+          <span class="logo-name">ONYX</span>
+          <span class="logo-sub">CODE</span>
+        </div>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Onyx Code. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#home">Inicio</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
